@@ -766,6 +766,22 @@
           <span class="project-skill">Python</span><span class="project-skill">Sensors</span><span class="project-skill">Navigation</span>
         </div>
       </div>
+      <div class="project-card">
+        <div class="project-tag">CFD · Thermal-Fluid</div>
+        <div class="project-title">Shell &amp; Tube Heat Exchanger — CFD Analysis</div>
+        <div class="project-desc">Built full heat exchanger geometry in SpaceClaim with a boundary layer refined mesh in ANSYS Meshing. Validated outlet temperatures against analytical predictions — applicable to process plant and FIFO environments.</div>
+        <div class="project-skills">
+          <span class="project-skill">ANSYS Fluent</span><span class="project-skill">SpaceClaim</span><span class="project-skill">CFD-Post</span>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-tag">CFD · Mixing</div>
+        <div class="project-title">Mixing Elbow with Swirler — CFD Analysis</div>
+        <div class="project-desc">Simulated swirl-enhanced mixing using species transport and turbulence models in ANSYS Fluent. Post-processed velocity streamlines and species contours to demonstrate swirl-induced mixing efficiency.</div>
+        <div class="project-skills">
+          <span class="project-skill">ANSYS Fluent</span><span class="project-skill">SpaceClaim</span><span class="project-skill">Species Transport</span>
+        </div>
+      </div>
     </div>
     <div style="margin-top:2.5rem">
       <a href="work.html" class="btn btn-outline">View All Work & Experience →</a>
@@ -948,7 +964,7 @@ in my sister's phone.</div>
   </div>
 </div>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
   // Intersection Observer for fade-in
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(el => {
@@ -956,15 +972,6 @@ in my sister's phone.</div>
     });
   }, { threshold: 0.1 });
   document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
-
-  function openModal(id) {
-    document.getElementById('modal-' + id).classList.add('open');
-  }
-  function closeModal(e) {
-    if (e.target.classList.contains('modal-overlay')) {
-      e.target.classList.remove('open');
-    }
-  }
 </script>
 </body>
 </html>
