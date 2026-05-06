@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Writing &mdash; Vishesh Kumar</title>
+  <meta name="description" content="Poems, reading notes and ideas &mdash; the other side of the equation." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">vishesh kumar <span class="slash">/</span> vk</a>
+    <ul class="nav-list">
+      <li><a href="index.html#about">about</a></li>
+      <li><a href="work.html">work</a></li>
+      <li><a href="thoughts.html" class="active">writing</a></li>
+      <li><a href="iradda.html">iradda</a></li>
+      <li><a href="index.html#contact">contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+
+  <!-- ── Hero ───────────────────────────────────────────────────────── -->
+  <section class="hero col">
+    <p class="section-label">Writing</p>
+    <h1 class="hero-name" style="font-size: clamp(2.75rem, 6vw, 4.5rem);">The other side of<br>the <em>equation.</em></h1>
+    <p class="hero-prose" style="margin-top: 1.5rem;">Poems I&apos;ve written, books I&apos;m reading, and ideas I can&apos;t stop turning over. Engineering is how I make things. This is how I make sense of them.</p>
+  </section>
+
+  <!-- ── Poems ──────────────────────────────────────────────────────── -->
+  <section class="section col" id="poems">
+    <p class="section-label">Poems</p>
+    <h2 class="section-h">Two poems.</h2>
+
+    <article class="entry" id="chinni-ki-dahi">
+      <div class="entry-when">No. 01<br><span style="color: var(--rule); font-family: var(--mono);">memory<br>identity</span></div>
+      <div>
+        <h3 class="entry-role" style="font-style: italic;">chinni ki dahi</h3>
+        <div class="poem" style="margin-top: 1rem; max-width: 56ch;">They lined us up like we were already sorted,
+small feet, pressed shirts, the world not yet a blade,
+then the teacher&apos;s voice, and I felt the room decide me,
+felt the air go out, felt something in me fade.</div>
+        <button class="see-all" style="background: none; border: none; cursor: pointer; padding: 0; padding-bottom: 0.18rem; margin-top: 1.5rem;" onclick="openPoem('chinni')">Read in full <span class="arrow">&rarr;</span></button>
+      </div>
+    </article>
+
+    <article class="entry" id="where-i-am-from">
+      <div class="entry-when">No. 02<br><span style="color: var(--rule); font-family: var(--mono);">home<br>delhi<br>roots</span></div>
+      <div>
+        <h3 class="entry-role" style="font-style: italic;">where i am from</h3>
+        <div class="poem" style="margin-top: 1rem; max-width: 52ch;">I am from fireflies,
+from ancestral hymns and love.
+I am from the place I still call home
+even in my dreams,
+where the air smells like my grandmother.</div>
+        <button class="see-all" style="background: none; border: none; cursor: pointer; padding: 0; padding-bottom: 0.18rem; margin-top: 1.5rem;" onclick="openPoem('fromwhere')">Read in full <span class="arrow">&rarr;</span></button>
+      </div>
+    </article>
+  </section>
+
+  <!-- ── Reading ────────────────────────────────────────────────────── -->
+  <section class="section col" id="reading">
+    <p class="section-label">Currently reading &amp; thinking about</p>
+    <h2 class="section-h">A small library.</h2>
+
+    <div class="book-row">
+      <div class="book-meta">
+        <span class="book-title">The Myth of Sisyphus</span>
+        Albert Camus<br>
+        <span style="color: var(--ink-2); font-family: var(--mono); font-size: 0.74rem; margin-top: 0.5rem; display: inline-block;">deep dive</span>
+      </div>
+      <div class="book-note">
+        <p>The essay on philosophical suicide hit me differently than Camus intended. I have a different stand &mdash; one that diverges sharply from his conclusion.</p>
+        <p style="margin-top: 0.85rem;">I think <em>philosophical suicide is worse than physical death.</em> Death, even in its cowardice, leaves remembrance &mdash; a trace that someone was once awake and questioning. But to surrender the will to question, to take that leap of faith away from absurdity, is the ultimate act of cowardice: it takes even the remembrance.</p>
+        <p style="margin-top: 0.85rem;">Camus argues for revolt against absurdity. I&apos;d argue that philosophical surrender is a more complete defeat &mdash; because at least the cowardice of real death still leaves a ghost.</p>
+      </div>
+    </div>
+
+    <div class="book-row">
+      <div class="book-meta">
+        <span class="book-title">For the Love of Physics</span>
+        Walter Lewin
+      </div>
+      <div class="book-note">
+        What I loved: he doesn&apos;t bury you in maths. He shows you that physics is just looking at the world honestly and asking obvious questions without embarrassment. It&apos;s about love of the subject &mdash; and the conviction that you can learn anything by treating it as simple, beautiful logic.
+      </div>
+    </div>
+
+    <div class="book-row">
+      <div class="book-meta">
+        <span class="book-title">Ignited Minds</span>
+        APJ Abdul Kalam
+      </div>
+      <div class="book-note">
+        Learning how to fly &mdash; in every sense of the word. A reminder that vision at scale is possible, and that the people who change the world are usually the ones who refuse to stop asking what it could become.
+      </div>
+    </div>
+
+    <div class="book-row">
+      <div class="book-meta">
+        <span class="book-title">Learning How to Fly</span>
+        APJ Abdul Kalam
+      </div>
+      <div class="book-note">
+        A different kind of flight &mdash; inward as much as upward.
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Feynman ────────────────────────────────────────────────────── -->
+  <section class="section col" id="feynman">
+    <p class="section-label">My ideal</p>
+    <h2 class="section-h">Richard <em>Feynman.</em></h2>
+    <div class="prose">
+      <p>Feynman is everything I aspire to be: a Nobel Prize in Physics, made ideas feel like play, and spent a life proving that <em>curiosity beats credential.</em> The man learned safe-cracking, played bongo drums, drew, painted, and then went home and solved quantum electrodynamics.</p>
+      <p>He&apos;s also &mdash; reportedly &mdash; <em>one of the lowest-IQ Nobel laureates in history,</em> which I find both extraordinarily comforting and absolutely hilarious. The implication being: the smartest thing you can do is not worry about being smart.</p>
+      <p>If he won a Nobel at his IQ, I feel reasonably assured I can do anything I set my mind to. Statistically speaking.</p>
+      <blockquote>I was born not knowing and have had only a little time to change that here and there.</blockquote>
+    </div>
+  </section>
+
+  <!-- ── Ideas ──────────────────────────────────────────────────────── -->
+  <section class="section col" id="ideas">
+    <p class="section-label">Things I think about</p>
+    <h2 class="section-h">Recurring questions.</h2>
+
+    <article class="entry">
+      <div class="entry-when">i.</div>
+      <div>
+        <h3 class="entry-role">Systems &amp; scale</h3>
+        <p class="entry-desc">Everything is a system. The best engineering problems and the best human problems have the same structure: constraints, feedback loops, and a search for elegant solutions.</p>
+      </div>
+    </article>
+
+    <article class="entry">
+      <div class="entry-when">ii.</div>
+      <div>
+        <h3 class="entry-role">Identity &amp; belonging</h3>
+        <p class="entry-desc">Growing up between Delhi and Melbourne teaches you that belonging is something you build, not find. The in-between is where the most interesting people live.</p>
+      </div>
+    </article>
+
+    <article class="entry">
+      <div class="entry-when">iii.</div>
+      <div>
+        <h3 class="entry-role">Policy &amp; people</h3>
+        <p class="entry-desc">The gap between what we know about inequality and what actually changes it is enormous. <a href="iradda.html" class="link-inline">Iradda</a> is my attempt to build a bridge across that gap &mdash; starting with women&apos;s empowerment.</p>
+      </div>
+    </article>
+
+    <article class="entry">
+      <div class="entry-when">iv.</div>
+      <div>
+        <h3 class="entry-role">Absurdity &amp; action</h3>
+        <p class="entry-desc">Camus was onto something. The world doesn&apos;t owe meaning. But I think the response to that isn&apos;t revolt &mdash; it&apos;s creation. You make meaning. You build things. You refuse to go quiet.</p>
+      </div>
+    </article>
+
+    <article class="entry">
+      <div class="entry-when">v.</div>
+      <div>
+        <h3 class="entry-role">Physics as a way of seeing</h3>
+        <p class="entry-desc">The best thing about engineering isn&apos;t solving problems &mdash; it&apos;s developing a way of looking at the world where everything is interesting. Every crack in the pavement, every shadow, every sound.</p>
+      </div>
+    </article>
+
+    <article class="entry">
+      <div class="entry-when">vi.</div>
+      <div>
+        <h3 class="entry-role">Writing as survival</h3>
+        <p class="entry-desc">I didn&apos;t choose to write poetry. It chose me. It&apos;s what happens when feelings have nowhere else to go &mdash; when the engineering mind needs somewhere to put what the equations can&apos;t hold.</p>
+      </div>
+    </article>
+
+    <a href="index.html" class="see-all" style="margin-top: 3rem;"><span class="arrow">&larr;</span> Back to home</a>
+  </section>
+
+</main>
+
+<!-- ── Poem modals ──────────────────────────────────────────────────── -->
+<div class="modal" id="modal-chinni" role="dialog" aria-modal="true" aria-labelledby="m-chinni-title">
+  <div class="modal-inner">
+    <button class="modal-close" onclick="closePoem()" aria-label="Close">close &times;</button>
+    <div class="modal-tag">No. 01 &middot; memory &middot; identity</div>
+    <h3 class="modal-title" id="m-chinni-title">chinni ki dahi</h3>
+    <div class="poem">They lined us up like we were already sorted,
+small feet, pressed shirts, the world not yet a blade,
+then the teacher&apos;s voice, and I felt the room decide me,
+felt the air go out, felt something in me fade.
+
+I clowned and begged and gave until I emptied,
+fed myself to mouths that never once said stay,
+broke open on the gates I thought would love me,
+and learned to haunt the edges of my own day.
+
+There was a boy being torn apart in public
+and I was brightest, I could have stayed still,
+but I knew that sound, the silence after laughter,
+the red-eared shame that time alone can&apos;t fill.
+
+So I handed him the question with the answer,
+watched something in his chest unknot and breathe,
+and I wept inside for both of us that moment,
+for everything the world had made us need.
+
+But I remember too a swing in golden nothing,
+mango-sticky hands, a sky with room to spare,
+my grandmother&apos;s village holding still around me
+like the world had briefly learned to just be there.
+
+No eyes that needed proof, no voice that measured,
+just a boy dissolving sweetly into sun,
+before the classrooms taught him he was lacking,
+before the losing had so much begun.
+
+I have been late to every good thing in my life.
+I have promised change in rooms where no one heard.
+I have watched my father&apos;s face move through its seasons
+and swallowed down the ones that left a bruise.
+
+But I am still here, scraped, uneven, stubborn,
+still wanting, which I&apos;ve learned is not a flaw.
+So I will ask for sweetness without apology,
+without performance, bargain, proof, or war,
+
+chinni ki dahi,
+not because I&apos;ve earned it.
+Because I want it.
+Because I always did.</div>
+  </div>
+</div>
+
+<div class="modal" id="modal-fromwhere" role="dialog" aria-modal="true" aria-labelledby="m-fromwhere-title">
+  <div class="modal-inner">
+    <button class="modal-close" onclick="closePoem()" aria-label="Close">close &times;</button>
+    <div class="modal-tag">No. 02 &middot; home &middot; delhi &middot; roots</div>
+    <h3 class="modal-title" id="m-fromwhere-title">where i am from</h3>
+    <div class="poem">I am from fireflies,
+from ancestral hymns and love.
+I am from the place I still call home
+even in my dreams,
+where the air smells like my grandmother.
+
+I am from sugarcane,
+from sweetness that stays on the tongue.
+I am from risk-takers and devoted lovers,
+from a clan that remembers warriors.
+
+I am from &ldquo;you should study&rdquo;
+and &ldquo;you should go out.&rdquo;
+I am from monkey-man worshippers,
+the god my mother loves.
+
+I am from Delhi,
+from potato and chutney,
+from Diwali firecrackers
+and the silence after.
+
+I am from my grandfather&apos;s warmth,
+from midnight chai,
+from photos of us
+in my sister&apos;s phone.</div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-name">Vishesh Kumar</div>
+      <div class="footer-tag">Melbourne &middot; 2026</div>
+    </div>
+    <div class="footer-links">
+      <a href="index.html">home</a>
+      <a href="work.html">work</a>
+      <a href="iradda.html">iradda</a>
+      <a href="https://www.linkedin.com/in/vikvisheshkumar" target="_blank" rel="noopener">linkedin</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function openPoem(id) {
+    document.getElementById('modal-' + id).classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+  function closePoem() {
+    document.querySelectorAll('.modal.open').forEach(m => m.classList.remove('open'));
+    document.body.style.overflow = '';
+  }
+  document.querySelectorAll('.modal').forEach(m => {
+    m.addEventListener('click', (e) => { if (e.target === m) closePoem(); });
+  });
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closePoem(); });
+</script>
+
+</body>
+</html>
