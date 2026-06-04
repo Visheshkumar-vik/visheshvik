@@ -3,6 +3,9 @@ index (3).html
 irada (1).html
 work (1).html
 
+# Local helper script — not part of the live site
+Update Website.bat
+
 # OS / editor junk
 Thumbs.db
 .DS_Store
