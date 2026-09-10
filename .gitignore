@@ -10,3 +10,6 @@ Update Website.bat
 Thumbs.db
 .DS_Store
 desktop.ini
+
+# Claude Code local config
+.claude/
