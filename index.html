@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script>document.documentElement.classList.add('js')</script>
 
   <!-- Google tag (gtag.js) — GA4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-JEJWQ7YZPC"></script>
@@ -15,13 +16,15 @@
 
   <title>Vishesh Kumar — Mechanical engineer, Melbourne</title>
   <meta name="description" content="Vishesh (Vik) Kumar — mechanical engineering student at RMIT, working on aerospace, autonomous and biomedical systems. Lab manager, RMIT UAV Research Team. Co-founder, Iradda." />
+  <meta property="og:title" content="Vishesh Kumar — Mechanical engineer, Melbourne" />
+  <meta property="og:image" content="https://vikvishesh.me/me.jpg" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
 <nav class="nav">
   <div class="nav-inner">
-    <a href="index.html" class="nav-logo"><span class="full">Vishesh Kumar</span><span class="short">VK</span><span class="slash">Mechanical Engineer</span></a>
+    <a href="index.html" class="nav-logo"><span class="full">Vishesh Kumar</span></a>
     <ul class="nav-list">
       <li><a href="#about">About</a></li>
       <li><a href="work.html">Work</a></li>
@@ -35,173 +38,187 @@
 <main>
 
   <!-- ── Hero ───────────────────────────────────────────────────────── -->
-  <section class="hero" id="about">
-  <div class="col">
-    <p class="section-label">Mechanical engineer &middot; Melbourne</p>
-    <h1 class="hero-name">Vishesh Kumar<span class="accent">.</span></h1>
-    <p class="hero-tag">
-      Aerospace
-      <span class="dot">&middot;</span>
-      Autonomous systems
-      <span class="dot">&middot;</span>
-      Biomedical CFD
-      <span class="dot">&middot;</span>
-      Systems engineering
-    </p>
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="hero-kicker reveal">
+          <span class="live">Open to graduate roles</span>
+          <span>Melbourne, AU &middot; via Delhi</span>
+        </p>
+        <h1 class="hero-name">
+          <span class="line"><span>Vishesh</span></span>
+          <span class="line"><span style="--d:.08s">Kumar<span class="accent">.</span></span></span>
+        </h1>
+        <p class="hero-lede reveal" style="--d:.2s">
+          Mechanical engineer building things that fly, see and simulate &mdash;
+          <strong>aerospace</strong>, <strong>autonomous systems</strong> and <strong>biomedical CFD</strong>.
+        </p>
+        <ul class="hero-links reveal" style="--d:.3s">
+          <li><a href="mailto:visheshkumar.vik@gmail.com" class="btn-primary">Get in touch <span class="arrow">&rarr;</span></a></li>
+          <li><a href="work.html">Full CV <span class="arrow">&rarr;</span></a></li>
+          <li><a href="https://www.linkedin.com/in/vikvisheshkumar" target="_blank" rel="noopener">LinkedIn <span class="arrow">&nearr;</span></a></li>
+        </ul>
+      </div>
 
-    <div class="hero-prose">
-      <p>Final-year B.Eng. (Mechanical) student at <strong>RMIT University</strong>, specialising in aerospace engineering, mechatronics and autonomous systems. Lab manager at <strong>RMIT&apos;s UAV Research Team</strong>; capstone researcher on cardiovascular digital twins with <strong>LEAP &amp; ANSYS</strong>; co-founder of <a href="iradda.html">Iradda</a>, a social-impact initiative built with a NITI Aayog policy researcher to bridge gender research and the women it ought to reach.</p>
-      <p>I write CFD pipelines, deploy nosecones, and program drones. I also write poems &mdash; usually at 2&nbsp;a.m., when the equations can&apos;t hold what I&apos;m thinking. Originally from Delhi.</p>
+      <figure class="titleblock reveal" style="--d:.25s">
+        <figcaption class="tb-head"><span>DWG VK-2026</span><span>Rev. C</span></figcaption>
+        <div class="tb-photo"><img src="me.jpg" alt="Portrait of Vishesh Kumar" width="640" height="800" /></div>
+        <dl class="tb-rows">
+          <div><dt>Role</dt><dd>B.Eng. (Mech.)<small>RMIT, final year</small></dd></div>
+          <div><dt>Current</dt><dd>Lab manager<small>RMIT UAS Research</small></dd></div>
+          <div><dt>Capstone</dt><dd>Stent digital twin<small>LEAP &middot; ANSYS</small></dd></div>
+          <div><dt>Founder</dt><dd>Iradda<small>Social impact</small></dd></div>
+        </dl>
+      </figure>
     </div>
+  </section>
 
-    <dl class="spec">
-      <div><dt>Role</dt><dd>Final-year B.Eng. (Mechanical)<small>RMIT University</small></dd></div>
-      <div><dt>Current</dt><dd>Lab manager<small>RMIT UAS Research Team</small></dd></div>
-      <div><dt>Capstone</dt><dd>Stent digital twin<small>LEAP &middot; ANSYS</small></dd></div>
-      <div><dt>Status</dt><dd>Open to graduate roles<small>Aerospace &middot; defence &middot; R&amp;D</small></dd></div>
-    </dl>
+  <!-- ── About ──────────────────────────────────────────────────────── -->
+  <section class="section" id="about">
+    <div class="wrap">
+      <header class="sec-head"><span class="sec-num">01</span><h2>About</h2></header>
 
-    <ul class="hero-links">
-      <li><a href="mailto:visheshkumar.vik@gmail.com" class="btn-primary">Email <span class="arrow">&rarr;</span></a></li>
-      <li><a href="https://www.linkedin.com/in/vikvisheshkumar" target="_blank" rel="noopener">LinkedIn <span class="arrow">&rarr;</span></a></li>
-      <li><a href="work.html">Full CV <span class="arrow">&rarr;</span></a></li>
-    </ul>
+      <div class="about-grid">
+        <div class="reveal">
+          <p class="about-lead">Final-year B.Eng. (Mechanical) student at RMIT, specialising in aerospace engineering, mechatronics and autonomous systems. I write CFD pipelines, deploy nosecones and program drones.</p>
+          <div class="prose">
+            <p>I grew up in Delhi &mdash; fireflies and chai and a grandfather&apos;s warmth &mdash; and landed in Melbourne chasing something I couldn&apos;t quite name yet. I&apos;ve since designed deployable nosecones for L2-class rockets, programmed autonomous drones, and built CFD pipelines for cardiovascular stents with <strong>LEAP &amp; ANSYS</strong>.</p>
+            <p>I believe the most interesting people refuse to be one thing. I&apos;m an engineer who reads Camus, a poet who understands fluid dynamics, and someone who thinks Feynman&apos;s greatest achievement was making physics feel like joy. I also write poems &mdash; usually at 2&nbsp;a.m., when the equations can&apos;t hold what I&apos;m thinking.</p>
+          </div>
+        </div>
+
+        <dl class="facts reveal" style="--d:.1s">
+          <div><dt>Education</dt><dd>RMIT University<small>B.Eng. Mechanical/Aerospace &middot; Distinction &middot; 2023&ndash;2026</small></dd></div>
+          <div><dt>Based in</dt><dd>Melbourne, AU<small>via Delhi, IN</small></dd></div>
+          <div><dt>Looking for</dt><dd>Graduate roles<small>Aerospace &middot; defence &middot; R&amp;D</small></dd></div>
+          <div><dt>Stack</dt><dd class="chips">
+            <span>SolidWorks</span><span>ANSYS Fluent</span><span>Python</span><span>MATLAB</span><span>Siemens NX</span><span>OpenRocket</span><span>XFLR5</span><span>FEA</span><span>CFD</span><span>Arduino</span>
+          </dd></div>
+        </dl>
+      </div>
     </div>
   </section>
 
   <!-- ── Selected work ──────────────────────────────────────────────── -->
-  <section class="section">
-  <div class="col">
-    <p class="section-label">Selected work</p>
-    <h2 class="section-h">Things I&apos;ve been part&nbsp;of</h2>
+  <section class="section" id="work">
+    <div class="wrap">
+      <header class="sec-head"><span class="sec-num">02</span><h2>Selected work</h2></header>
 
-    <table class="list">
-      <tr>
-        <td class="year">2026&nbsp;&mdash;</td>
-        <td class="what">Biomedical simulation capstone <em>&mdash; digital-twin pipeline for cardiovascular stents</em></td>
-        <td class="where">LEAP &middot; ANSYS &middot; RMIT</td>
-      </tr>
-      <tr>
-        <td class="year">2026&nbsp;&mdash;</td>
-        <td class="what">Lab manager, UAV research</td>
-        <td class="where">RMIT UAS Research Team</td>
-      </tr>
-      <tr>
-        <td class="year">2025</td>
-        <td class="what">Systems engineer <em>&mdash; deployable nosecone, L2 rocket</em></td>
-        <td class="where">RMIT High Velocity</td>
-      </tr>
-      <tr>
-        <td class="year">2025&nbsp;&mdash;</td>
-        <td class="what">Co-founder</td>
-        <td class="where">Iradda</td>
-      </tr>
-      <tr>
-        <td class="year">2025</td>
-        <td class="what">Freight-pod concept <em>&mdash; 1 of 28 selected across Victoria</em></td>
-        <td class="where">RTSA Hackathon</td>
-      </tr>
-      <tr>
-        <td class="year">2025</td>
-        <td class="what">Campus ambassador</td>
-        <td class="where">Perplexity AI</td>
-      </tr>
-      <tr>
-        <td class="year">2024</td>
-        <td class="what">Strategy intern <em>&mdash; PESTEL on a triple-glazed-window IP</em></td>
-        <td class="where">Engineering &amp; Scientific Intl.</td>
-      </tr>
-      <tr>
-        <td class="year">2023&nbsp;&mdash;</td>
-        <td class="what">Undergraduate researcher &rarr; Deputy &rarr; Lab manager</td>
-        <td class="where">RMIT UAS Research Team</td>
-      </tr>
-    </table>
+      <ul class="rows indent">
+        <li class="reveal"><a class="row" href="work.html">
+          <span class="row-code">CFD</span>
+          <span class="row-title">Biomedical simulation capstone<small>Digital-twin pipeline for cardiovascular stents</small></span>
+          <span class="row-org">LEAP &middot; ANSYS &middot; RMIT</span>
+          <span class="row-year">2026&thinsp;&mdash;</span>
+          <span class="arrow">&rarr;</span>
+        </a></li>
+        <li class="reveal"><a class="row" href="work.html">
+          <span class="row-code">UAV</span>
+          <span class="row-title">Lab manager, UAV research<small>Undergraduate researcher &rarr; deputy &rarr; lab manager</small></span>
+          <span class="row-org">RMIT UAS Research Team</span>
+          <span class="row-year">2023&thinsp;&mdash;</span>
+          <span class="arrow">&rarr;</span>
+        </a></li>
+        <li class="reveal"><a class="row" href="work.html">
+          <span class="row-code">RKT</span>
+          <span class="row-title">Systems engineer<small>Deployable nosecone, L2 rocket</small></span>
+          <span class="row-org">RMIT High Velocity</span>
+          <span class="row-year">2025</span>
+          <span class="arrow">&rarr;</span>
+        </a></li>
+        <li class="reveal"><a class="row" href="iradda.html">
+          <span class="row-code">IRD</span>
+          <span class="row-title">Co-founder<small>Turning gender-policy research into mentorship and access</small></span>
+          <span class="row-org">Iradda</span>
+          <span class="row-year">2025&thinsp;&mdash;</span>
+          <span class="arrow">&rarr;</span>
+        </a></li>
+        <li class="reveal"><a class="row" href="work.html">
+          <span class="row-code">HCK</span>
+          <span class="row-title">Freight-pod concept<small>1 of 28 selected across Victoria</small></span>
+          <span class="row-org">RTSA Hackathon</span>
+          <span class="row-year">2025</span>
+          <span class="arrow">&rarr;</span>
+        </a></li>
+        <li class="reveal"><a class="row" href="work.html">
+          <span class="row-code">AMB</span>
+          <span class="row-title">Campus ambassador</span>
+          <span class="row-org">Perplexity AI</span>
+          <span class="row-year">2025</span>
+          <span class="arrow">&rarr;</span>
+        </a></li>
+        <li class="reveal"><a class="row" href="work.html">
+          <span class="row-code">STR</span>
+          <span class="row-title">Strategy intern<small>PESTEL on a triple-glazed-window IP</small></span>
+          <span class="row-org">Engineering &amp; Scientific Intl.</span>
+          <span class="row-year">2024</span>
+          <span class="arrow">&rarr;</span>
+        </a></li>
+      </ul>
 
-    <a href="work.html" class="see-all">All work, projects &amp; certifications <span class="arrow">&rarr;</span></a>
+      <div class="indent"><a href="work.html" class="see-all">All work, projects &amp; certifications <span class="arrow">&rarr;</span></a></div>
     </div>
   </section>
 
-  <!-- ── About / who ────────────────────────────────────────────────── -->
+  <!-- ── Currently building ─────────────────────────────────────────── -->
   <section class="section">
-  <div class="col">
-    <p class="section-label">About</p>
-    <h2 class="section-h">More than one thing at once.</h2>
+    <div class="wrap">
+      <header class="sec-head"><span class="sec-num">03</span><h2>Currently building</h2></header>
 
-    <div class="two-col">
-      <div class="prose">
-        <p>I grew up in Delhi &mdash; fireflies and chai and a grandfather&apos;s warmth &mdash; and landed in Melbourne chasing something I couldn&apos;t quite name yet. I&apos;ve since designed deployable nosecones for L2-class rockets, programmed autonomous drones, and built CFD pipelines for cardiovascular stents. I&apos;ve also written poems at 2&nbsp;a.m. and co-founded a social-impact initiative with a researcher from India&apos;s Prime Minister&apos;s Office.</p>
-        <p>I believe the most interesting people refuse to be one thing. I&apos;m an engineer who reads Camus, a poet who understands fluid dynamics, and someone who thinks Richard Feynman&apos;s greatest achievement was making physics feel like joy.</p>
-        <p>Currently looking for graduate roles in aerospace, defence, and R&amp;D &mdash; <a href="mailto:visheshkumar.vik@gmail.com">say hello</a>.</p>
+      <div class="feature">
+        <p class="feature-quote reveal">Iradda <em>&mdash; intention into action.</em></p>
+        <div class="reveal" style="--d:.1s">
+          <div class="prose">
+            <p>Co-founded with <strong>Ishika Chaudhary</strong>, a policy researcher with direct experience at NITI Aayog and India&apos;s Prime Minister&apos;s Office. Iradda translates institutional knowledge about gender equality into mentorship, skills and access &mdash; the kind that reaches the women who actually need it.</p>
+            <p>The word <em>Iradda</em> draws from the Sanskrit <em>Sankalpa</em>: the resolve to act with purpose. The most useful policy insights shouldn&apos;t live only in policy circles.</p>
+          </div>
+          <a href="iradda.html" class="see-all">More on Iradda <span class="arrow">&rarr;</span></a>
+        </div>
       </div>
-
-      <aside>
-        <div class="meta-block">
-          <h4>Education</h4>
-          <div class="meta-main">RMIT University</div>
-          <div class="meta-sub">B.Eng. Mechanical/Aerospace<br>Distinction &middot; 2023&ndash;2026</div>
-        </div>
-        <div class="meta-block">
-          <h4>Based in</h4>
-          <div class="meta-main">Melbourne, AU</div>
-          <div class="meta-sub">via Delhi, IN</div>
-        </div>
-        <div class="meta-block">
-          <h4>Stack</h4>
-          <p class="tag-row">
-            <span>SolidWorks</span><span>ANSYS Fluent</span><span>Python</span><span>MATLAB</span><span>OpenRocket</span><span>XFLR5</span><span>Siemens NX</span><span>FEA</span><span>CFD</span><span>Arduino</span>
-          </p>
-        </div>
-      </aside>
-    </div>
     </div>
   </section>
 
-  <!-- ── Currently building (Iradda) ─────────────────────────────────── -->
+  <!-- ── Writing ────────────────────────────────────────────────────── -->
   <section class="section">
-  <div class="col">
-    <p class="section-label">Currently building</p>
-    <h2 class="section-h">Iradda <em>&mdash; intention into action.</em></h2>
-    <div class="prose">
-      <p>Co-founded with <strong>Ishika Chaudhary</strong>, a policy researcher with direct experience at NITI Aayog and India&apos;s Prime Minister&apos;s Office. Iradda translates institutional knowledge about gender equality into mentorship, skills and access &mdash; the kind that reaches the women who actually need it.</p>
-      <p>The word <em>Iradda</em> draws from the Sanskrit <em>Sankalpa</em>: the resolve to act with purpose. The premise is simple. The most useful policy insights shouldn&apos;t live only in policy circles.</p>
-    </div>
-    <a href="iradda.html" class="see-all">More on Iradda <span class="arrow">&rarr;</span></a>
-    </div>
-  </section>
+    <div class="wrap">
+      <header class="sec-head"><span class="sec-num">04</span><h2>The other side <em>of the equation.</em></h2></header>
 
-  <!-- ── Writing / reading ──────────────────────────────────────────── -->
-  <section class="section">
-  <div class="col">
-    <p class="section-label">Writing</p>
-    <h2 class="section-h">The other side of the equation.</h2>
-    <p class="section-intro">Poems I&apos;ve written, books I&apos;m reading, and ideas I can&apos;t stop turning over.</p>
-
-    <div class="poem poem-excerpt">I am from fireflies,
+      <div class="writing">
+        <div class="poem-card reveal">
+          <div class="poem poem-excerpt">I am from fireflies,
 from ancestral hymns and love.
 I am from the place I still call home
 even in my dreams,
 where the air smells like my grandmother.</div>
-    <p class="poem-meta">From <em>where i am from</em>. <a href="thoughts.html#where-i-am-from" class="link-inline">Read in full</a>.</p>
-
-    <div style="margin-top: 2.5rem;" class="prose">
-      <p>Currently with <em>The Myth of Sisyphus</em> (Camus) &mdash; disagreeing with him on philosophical suicide. <em>For the Love of Physics</em> (Lewin), <em>Ignited Minds</em> (Kalam). My ideal remains Feynman: Nobel-laureate, safe-cracker, bongo player, reportedly one of the lowest-IQ Nobel-winners in history &mdash; which I find both deeply comforting and extremely funny.</p>
-    </div>
-
-    <a href="thoughts.html" class="see-all">All writing &amp; reading <span class="arrow">&rarr;</span></a>
+          <p class="poem-meta">From <em>where i am from</em> &middot; <a href="thoughts.html#where-i-am-from" class="link-inline">Read in full</a></p>
+        </div>
+        <div class="reveal" style="--d:.1s">
+          <p class="section-label">Reading</p>
+          <div class="prose">
+            <p>Currently with <em>The Myth of Sisyphus</em> (Camus) &mdash; disagreeing with him on philosophical suicide. <em>For the Love of Physics</em> (Lewin), <em>Ignited Minds</em> (Kalam).</p>
+            <p>My ideal remains Feynman: Nobel laureate, safe-cracker, bongo player &mdash; which I find both deeply comforting and extremely funny.</p>
+          </div>
+          <a href="thoughts.html" class="see-all">All writing &amp; reading <span class="arrow">&rarr;</span></a>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- ── Contact ────────────────────────────────────────────────────── -->
   <section class="section" id="contact">
-  <div class="col">
-    <p class="section-label">Contact</p>
-    <h2 class="section-h">Let&apos;s talk.</h2>
-    <p class="section-intro">Aerospace, defence, R&amp;D, Iradda, a poem &mdash; or just a good conversation.</p>
-    <ul class="hero-links">
-      <li><a href="mailto:visheshkumar.vik@gmail.com" class="btn-primary">visheshkumar.vik@gmail.com <span class="arrow">&rarr;</span></a></li>
-      <li><a href="https://www.linkedin.com/in/vikvisheshkumar" target="_blank" rel="noopener">LinkedIn <span class="arrow">&rarr;</span></a></li>
-    </ul>
+    <div class="wrap">
+      <header class="sec-head"><span class="sec-num">05</span><h2>Let&apos;s talk.</h2></header>
+
+      <div class="indent">
+        <p class="section-intro reveal">Aerospace, defence, R&amp;D, Iradda, a poem &mdash; or just a good conversation.</p>
+        <a href="mailto:visheshkumar.vik@gmail.com" class="contact-big reveal">visheshkumar.vik@gmail.com <span class="arrow">&rarr;</span></a>
+
+        <dl class="contact-meta reveal">
+          <div><dt>LinkedIn</dt><dd><a href="https://www.linkedin.com/in/vikvisheshkumar" target="_blank" rel="noopener">in/vikvisheshkumar</a></dd></div>
+          <div><dt>Location</dt><dd>Melbourne, Australia</dd></div>
+          <div><dt>Status</dt><dd>Open to graduate roles</dd></div>
+        </dl>
+      </div>
     </div>
   </section>
 
@@ -222,13 +239,6 @@ where the air smells like my grandmother.</div>
   </div>
 </footer>
 
-<script>
-  // gentle entrance
-  const io = new IntersectionObserver((es) => es.forEach(e => {
-    if (e.isIntersecting) e.target.classList.add('visible');
-  }), { threshold: 0.08 });
-  document.querySelectorAll('.fade-in').forEach(el => io.observe(el));
-</script>
-
+<script src="site.js"></script>
 </body>
 </html>
