@@ -69,8 +69,8 @@
       <div>
         <h3 class="entry-role">Project lead and pipeline architect &mdash; StentForge coronary stent digital twin</h3>
         <p class="entry-org">OENG1168 Capstone &middot; RMIT University &middot; with LEAP Australia and ANSYS &middot; Team of 3 &middot; Supervised by Dr Kiao Inthavong</p>
-        <p class="entry-desc">I build simulation that runs itself. My capstone puts nonlinear contact FEA across a 174-design stent corpus on Australia&apos;s national supercomputer, with Ansys Mechanical APDL driven entirely from Python, parametric geometry in, engineering quantities out, no GUI anywhere in the loop.</p>
-        <p class="entry-tags"><span>Ansys Mechanical APDL</span><span>PyMAPDL</span><span>Python</span><span>HPC (NCI Gadi)</span><span>FEA</span></p>
+        <p class="entry-desc">Built the entire pipeline end to end: stent generator, artery, meshing, crimp, expansion and release in Mechanical APDL, strut-resolved CFD in Fluent, and the Pareto ranking. Ran the 101-design campaign on a 56-core RMIT workstation with up to 13 Ansys solves at once, after first setting it up on NCI Gadi.</p>
+        <p class="entry-tags"><span>Ansys Mechanical APDL</span><span>Ansys Fluent</span><span>optiSLang</span><span>SimAI</span><span>PyMAPDL</span><span>HPC</span></p>
       </div>
     </article>
 
@@ -196,8 +196,9 @@
       <div class="proj-tag">Biomedical / FEA<br>2026</div>
       <div>
         <h3 class="proj-title">StentForge &mdash; coronary stent digital twin</h3>
-        <p class="proj-desc">Nonlinear contact FEA across a 174-design stent corpus on Australia&apos;s national supercomputer, with Ansys Mechanical APDL driven entirely from Python, parametric geometry in, engineering quantities out, no GUI anywhere in the loop.</p>
-        <p class="proj-outcome">Most of the interesting work has been the parts nobody writes tutorials for, making a campaign survive being killed halfway, sizing jobs against a real cost model, and tracking down a solver failure that only appeared under batch scheduling. Ansys Mechanical APDL &middot; PyMAPDL &middot; Python &middot; NCI Gadi.</p>
+        <p class="proj-desc">A Python pipeline in PyAnsys that designs coronary stents, takes each one through crimp, expansion and release inside a narrowed artery, then studies the blood flow with CFD and ranks the designs on eight objectives. RMIT capstone with LEAP Australia and Ansys, in a team of three.</p>
+        <p class="proj-outcome">Our best design reopened the 48&nbsp;% narrowing to 8&nbsp;% residual stenosis after release. 38 of the 101 designs reached full expansion; optiSLang predicted the recoil of 26 unseen designs with R&sup2; 0.99, and SimAI reproduced the stent&apos;s full deformation field with R&sup2; 0.985. Ansys Mechanical APDL &middot; Fluent &middot; optiSLang &middot; SimAI &middot; PyMAPDL.</p>
+        <div class="proj-figs"><figure><img src="img/projects/stent-in-artery.webp" alt="Stent inside the artery at full expansion: fluid-domain walls (Ansys Fluent)" loading="lazy" /><figcaption>Stent inside the artery at full expansion: fluid-domain walls (Ansys Fluent)</figcaption></figure><figure><img src="img/projects/stent-best-design.webp" alt="Best design at full expansion (Mechanical APDL)" loading="lazy" /><figcaption>Best design at full expansion (Mechanical APDL)</figcaption></figure><figure><img src="img/projects/stent-wss.webp" alt="Wall shear stress on the artery wall, best design, steady flow at 0.26 m/s (Ansys Fluent)" loading="lazy" /><figcaption>Wall shear stress on the artery wall, best design, steady flow at 0.26 m/s (Ansys Fluent)</figcaption></figure><figure><img src="img/projects/stent-pareto.webp" alt="Expander pressure against in-air recoil, 31 designs on the Pareto front" loading="lazy" /><figcaption>Expander pressure against in-air recoil, 31 designs on the Pareto front</figcaption></figure></div>
       </div>
     </article>
 
@@ -274,6 +275,7 @@
         <h3 class="proj-title">Deployable nosecone &mdash; L2 rocket</h3>
         <p class="proj-desc">Servo-actuated two-fairing deployable nosecone for an L2-class rocket. Systems engineering, trade studies for material and servo selection, parachute sizing, and failure analysis.</p>
         <p class="proj-outcome">Validated preliminary design with demo prototype; simulation- and trade-study-backed CAD files. OpenRocket &middot; SolidWorks.</p>
+        <div class="proj-figs"><figure><img src="img/projects/nosecone-cad.webp" alt="Deployable nosecone, CAD" loading="lazy" /><figcaption>Deployable nosecone, CAD</figcaption></figure><figure><img src="img/projects/nosecone-mechanism.webp" alt="Servo-actuated two-fairing mechanism" loading="lazy" /><figcaption>Servo-actuated two-fairing mechanism</figcaption></figure></div>
       </div>
     </article>
 
@@ -283,6 +285,7 @@
         <h3 class="proj-title">Freight-pod concept &mdash; RTSA hackathon</h3>
         <p class="proj-desc">Category-B freight-pod solution for Australia&apos;s intermodal logistics challenge. Conductive guidance rails within dedicated freight lanes using existing rail infrastructure.</p>
         <p class="proj-outcome">SolidWorks preliminary design and motion study; positive feedback from senior RTSA engineers.</p>
+        <div class="proj-figs"><figure class="wide video"><div class="video-box"><iframe src="https://www.youtube-nocookie.com/embed/0-1Yk2NSFbE" title="Freight-pod concept, motion study" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div><figcaption>Freight-pod concept, motion study &middot; <a href="https://youtu.be/0-1Yk2NSFbE" class="link-inline" target="_blank" rel="noopener">watch on YouTube</a></figcaption></figure><figure><img src="img/projects/freight-pod.webp" alt="Freight pod, SolidWorks preliminary design" loading="lazy" /><figcaption>Freight pod, SolidWorks preliminary design</figcaption></figure></div>
       </div>
     </article>
 
@@ -292,6 +295,7 @@
         <h3 class="proj-title">Autonomous drone system</h3>
         <p class="proj-desc">RUASRT project for colour detection and autonomous landing. Working with gyro, range, colour and temperature sensors to develop Python control scripts for full flight autonomy.</p>
         <p class="proj-outcome">Active development; targeting associate-level Python proficiency and deeper autonomy understanding.</p>
+        <div class="proj-figs"><figure class="wide video"><div class="video-box"><iframe src="https://www.youtube-nocookie.com/embed/yYOQignLZ8U" title="Autonomous drone flight" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div><figcaption>Autonomous drone flight &middot; <a href="https://youtu.be/yYOQignLZ8U" class="link-inline" target="_blank" rel="noopener">watch on YouTube</a></figcaption></figure><figure><img src="img/projects/autonomous-drone.webp" alt="Drone on its landing pad" loading="lazy" /><figcaption>Drone on its landing pad</figcaption></figure></div>
       </div>
     </article>
 
@@ -310,6 +314,7 @@
         <h3 class="proj-title">Electric control panel</h3>
         <p class="proj-desc">Personal project modelling an electrical control panel in SolidWorks Sheet Metal to showcase DFM skills. Designed bends, flanges and cutouts with flat pattern for laser/CNC manufacturing.</p>
         <p class="proj-outcome">Improved DFM proficiency and practical sheet-metal workflows.</p>
+        <div class="proj-figs"><figure><img src="img/projects/control-panel-open.webp" alt="Control panel, door open (SolidWorks Sheet Metal)" loading="lazy" /><figcaption>Control panel, door open (SolidWorks Sheet Metal)</figcaption></figure><figure><img src="img/projects/control-panel-closed.webp" alt="Control panel, closed" loading="lazy" /><figcaption>Control panel, closed</figcaption></figure></div>
       </div>
     </article>
 
@@ -319,6 +324,7 @@
         <h3 class="proj-title">Quadcopter model</h3>
         <p class="proj-desc">Full SolidWorks model of a quadcopter &mdash; from fasteners to propellers. Applied advanced mates and produced a motion study and exploded view for technical communication.</p>
         <p class="proj-outcome">Boosted CAD proficiency; exploded view for technical documentation.</p>
+        <div class="proj-figs"><figure><img src="img/projects/quadcopter.webp" alt="Quadcopter model (SolidWorks)" loading="lazy" /><figcaption>Quadcopter model (SolidWorks)</figcaption></figure></div>
       </div>
     </article>
 
@@ -328,6 +334,7 @@
         <h3 class="proj-title">Retractable landing gear</h3>
         <p class="proj-desc">Personal project modelling landing gear to understand mechanical linkages and realistic motion. Advanced mates for retraction/extension; SolidWorks FEA across multiple materials.</p>
         <p class="proj-outcome">Deeper understanding of complex linkages and introductory FEA for robust design.</p>
+        <div class="proj-figs"><figure><img src="img/projects/landing-gear.webp" alt="Landing gear assembly (SolidWorks)" loading="lazy" /><figcaption>Landing gear assembly (SolidWorks)</figcaption></figure></div>
       </div>
     </article>
 
@@ -337,6 +344,7 @@
         <h3 class="proj-title">Shell &amp; tube heat exchanger &mdash; CFD analysis</h3>
         <p class="proj-desc">Built full heat-exchanger geometry in SpaceClaim and generated a boundary-layer-refined mesh in ANSYS Meshing, configuring turbulence models, material properties and boundary conditions for a complete thermal-fluid simulation. Post-processed pressure, temperature and velocity contours in CFD-Post.</p>
         <p class="proj-outcome">Outlet temperatures validated against analytical predictions &mdash; directly applicable to process-plant and FIFO engineering environments.</p>
+        <div class="proj-figs"><figure class="wide"><img src="img/projects/heat-exchanger.webp" alt="Shell-and-tube heat exchanger, ANSYS Fluent" loading="lazy" /><figcaption>Shell-and-tube heat exchanger, ANSYS Fluent</figcaption></figure></div>
       </div>
     </article>
 
@@ -346,6 +354,7 @@
         <h3 class="proj-title">Mixing elbow with swirler &mdash; CFD analysis</h3>
         <p class="proj-desc">Built mixing-elbow and swirler geometry in SpaceClaim and generated a refined mesh in ANSYS Meshing, configuring species-transport models, turbulence settings and boundary conditions to simulate swirl-enhanced mixing. Post-processed velocity streamlines and species-concentration contours in CFD-Post.</p>
         <p class="proj-outcome">Demonstrated how swirl-induced turbulence improves mixing efficiency &mdash; relevant to chemical dosing, reagent tanks and mineral processing.</p>
+        <div class="proj-figs"><figure><img src="img/projects/mixing-elbow.webp" alt="Mixing elbow with swirler, ANSYS Fluent" loading="lazy" /><figcaption>Mixing elbow with swirler, ANSYS Fluent</figcaption></figure></div>
       </div>
     </article>
     </div>
