@@ -511,3 +511,22 @@ footer { margin-top: 2rem; background: var(--ink); color: #fff; padding: clamp(3
   .lb { grid-template-columns: 2.5rem minmax(0, 1fr) 2.5rem; }
   .lb .lb-prev, .lb .lb-next { font-size: 2.25rem; }
 }
+
+/* StentForge authorship (signed contribution table) */
+.proj-authors { margin-top: 1.4rem; max-width: 46rem; border-top: 1px solid var(--rule); }
+.pa-head { font-family: var(--mono); font-size: .6875rem; letter-spacing: .04em; text-transform: uppercase; color: var(--secondary); padding: .7rem 0 .2rem; }
+.pa-row { display: grid; grid-template-columns: 1.5rem 11rem minmax(0, 1fr); gap: .25rem 1rem; padding: .75rem 0; border-bottom: 1px solid var(--rule); }
+.pa-n { font-family: var(--mono); font-size: .75rem; color: var(--secondary); padding-top: .1rem; }
+.pa-who { font-size: .9375rem; font-weight: 600; color: var(--ink); line-height: 1.35; }
+.pa-who span { display: block; font-family: var(--mono); font-size: .6875rem; font-weight: 400; color: var(--secondary); margin-top: .2rem; }
+.pa-what { font-size: .875rem; line-height: 1.5; color: var(--secondary); }
+.pa-what b { font-weight: 600; color: var(--ink-soft, var(--ink)); }
+.pa-row.me { background: var(--paper); margin: 0 -.75rem; padding: .9rem .75rem; }
+.pa-row.me .pa-what { color: var(--ink-soft, var(--ink)); font-size: .9375rem; }
+.pa-row.me .pa-who span { color: var(--ink); }
+@media (max-width: 600px) {
+  .pa-row { grid-template-columns: 1.25rem minmax(0, 1fr); }
+  .pa-what { grid-column: 2; }
+  .pa-row.me { margin: 0 -.5rem; padding: .85rem .5rem; }
+}
+

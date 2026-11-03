@@ -16,7 +16,7 @@
 
   <title>Work &amp; experience &mdash; Vishesh Kumar</title>
   <meta name="description" content="Experience, projects and certifications &mdash; from cardiovascular CFD pipelines to L2 rocketry to autonomous drones." />
-  <link rel="stylesheet" href="styles.css?v=20261104b" />
+  <link rel="stylesheet" href="styles.css?v=20261104c" />
 </head>
 <body>
 
@@ -196,9 +196,15 @@
       <div class="proj-tag">Biomedical / FEA<br>2026</div>
       <div>
         <h3 class="proj-title">StentForge &mdash; coronary stent digital twin</h3>
-        <p class="proj-meta">OENG1168 Engineering Capstone &middot; Authors: Vishesh Kumar (lead author, largest contributor at 40&nbsp;%), Jignesh Makineni, Harshita Bhandari</p>
+        <p class="proj-meta">OENG1168 Engineering Capstone &middot; Lead author: Vishesh Kumar</p>
         <p class="proj-desc">A Python pipeline in PyAnsys that designs coronary stents, takes each one through crimp, expansion and release inside a narrowed artery, then studies the blood flow with CFD and ranks the designs on eight objectives. RMIT capstone with LEAP Australia and Ansys.</p>
         <p class="proj-outcome">Our best design reopened the 48&nbsp;% narrowing to 8&nbsp;% residual stenosis after release. 38 of the 101 designs reached full expansion; optiSLang predicted the recoil of 26 unseen designs with R&sup2; 0.99, and SimAI reproduced the stent&apos;s full deformation field with R&sup2; 0.985. Ansys Mechanical APDL &middot; Fluent &middot; optiSLang &middot; SimAI &middot; PyMAPDL.</p>
+        <div class="proj-authors">
+          <p class="pa-head">Authors in authorship order &middot; from the signed group contribution table</p>
+          <div class="pa-row me"><span class="pa-n">1</span><p class="pa-who">Vishesh Kumar<span>Lead author &middot; 40&nbsp;%, the largest share</span></p><p class="pa-what"><b>Led</b> machine learning, pipeline architecture, stent geometry, mechanical and CFD. <b>Built</b> the pipeline architecture end to end, the stent and artery generator, the structural FEA in Mechanical APDL (crimp, expansion, release), PyFluent meshing, and the optiSLang and SimAI training.</p></div>
+          <div class="pa-row"><span class="pa-n">2</span><p class="pa-who">Jignesh Makineni<span>30&nbsp;%</span></p><p class="pa-what"><b>Led</b> CFD and verification and validation (V&amp;V). <b>Built</b> the patient artery processing, PyFluent solving and V&amp;V runs, and the sampling method for the stent generator.</p></div>
+          <div class="pa-row"><span class="pa-n">3</span><p class="pa-who">Harshita Bhandari<span>30&nbsp;%</span></p><p class="pa-what"><b>Led</b> V&amp;V, pipeline physics and research. <b>Built</b> the CFD V&amp;V, mesh independence (GCI), pipeline physics and boundary-condition checks, OSI and TAWSS post-processing, and patient artery processing.</p></div>
+        </div>
       </div>
       <figure class="proj-video"><video controls muted loop playsinline preload="metadata" data-autoplay poster="img/projects/stent-demo-poster.webp" aria-label="StentForge demo video"><source src="video/stentforge-demo.mp4" type="video/mp4" /></video><figcaption>Demo, 2 min 51 s: five numbers make one stent; meshing, crimping, expansion in the narrowed artery and staged release (Mechanical APDL); blood speed and wall shear stress, steady and over one heartbeat (Fluent); then the optiSLang and SimAI surrogates predicting new designs</figcaption></figure>
       <div class="proj-figs"><figure><img src="img/projects/stent-in-artery.webp" alt="Stent inside the artery at full expansion: fluid-domain walls (Ansys Fluent)" loading="lazy" /><figcaption>Stent inside the artery at full expansion: fluid-domain walls (Ansys Fluent)</figcaption></figure><figure><img src="img/projects/stent-best-design.webp" alt="Best design at full expansion (Mechanical APDL)" loading="lazy" /><figcaption>Best design at full expansion (Mechanical APDL)</figcaption></figure><figure><img src="img/projects/stent-wss.webp" alt="Wall shear stress on the artery wall, best design, steady flow at 0.26 m/s (Ansys Fluent)" loading="lazy" /><figcaption>Wall shear stress on the artery wall, best design, steady flow at 0.26 m/s (Ansys Fluent)</figcaption></figure><figure><img src="img/projects/stent-pareto.webp" alt="Expander pressure against in-air recoil, 31 designs on the Pareto front" loading="lazy" /><figcaption>Expander pressure against in-air recoil, 31 designs on the Pareto front</figcaption></figure></div>
