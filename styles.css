@@ -465,3 +465,14 @@ footer { margin-top: 2rem; background: var(--ink); color: #fff; padding: clamp(3
   .spec, .tb-rows { grid-template-columns: 1fr; }
   .spec > div, .tb-rows > div { border-right: 0 !important; border-bottom: 1px solid var(--rule) !important; }
 }
+
+
+/* Project figures (Nov 2026): real figures from the project reports */
+.proj-meta { font-family: var(--mono); font-size: .75rem; color: var(--secondary); margin: -.1rem 0 .6rem; letter-spacing: .01em; }
+.proj-figs { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: .75rem; margin-top: 1.25rem; max-width: 52rem; }
+.proj-figs figure { margin: 0; background: var(--paper); border: 1px solid var(--rule); }
+.proj-figs figure.wide { grid-column: 1 / -1; }
+.proj-figs img { display: block; width: 100%; height: auto; }
+.proj-figs figcaption { font-family: var(--mono); font-size: .6875rem; line-height: 1.4; color: var(--secondary); padding: .45rem .6rem; border-top: 1px solid var(--rule); }
+@media (max-width: 600px) { .proj-figs { grid-template-columns: 1fr; } }
+.proj-figs figure:only-child { max-width: 40rem; }

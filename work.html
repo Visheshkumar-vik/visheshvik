@@ -67,10 +67,10 @@
     <article class="entry">
       <div class="entry-when">Mar 2026 &mdash;<br>Present</div>
       <div>
-        <h3 class="entry-role">Biomedical simulation capstone &mdash; digital-twin pipeline</h3>
-        <p class="entry-org">LEAP Australia &middot; ANSYS &middot; RMIT University &middot; Part-time</p>
-        <p class="entry-desc">Developing a full digital-twin pipeline for cardiovascular stent deployment under supervision at RMIT, in collaboration with LEAP and ANSYS. Building CFD models of stenosed arteries, designing smart-material stents, and running fully-coupled fluid&ndash;structure interaction (FSI) simulations. Performing virtual implantation using patient-specific 3D artery scans and evaluating clinical metrics including wall shear stress, pressure drop, and flow recovery.</p>
-        <p class="entry-tags"><span>ANSYS Fluent</span><span>FSI</span><span>SpaceClaim</span><span>CFD</span><span>Biomedical</span></p>
+        <h3 class="entry-role">Project lead and pipeline architect &mdash; StentForge coronary stent digital twin</h3>
+        <p class="entry-org">OENG1168 Capstone &middot; RMIT University &middot; with LEAP Australia and ANSYS &middot; Team of 3 &middot; Supervised by Dr Kiao Inthavong</p>
+        <p class="entry-desc">I build simulation that runs itself. My capstone puts nonlinear contact FEA across a 174-design stent corpus on Australia&apos;s national supercomputer, with Ansys Mechanical APDL driven entirely from Python, parametric geometry in, engineering quantities out, no GUI anywhere in the loop.</p>
+        <p class="entry-tags"><span>Ansys Mechanical APDL</span><span>PyMAPDL</span><span>Python</span><span>HPC (NCI Gadi)</span><span>FEA</span></p>
       </div>
     </article>
 
@@ -193,13 +193,80 @@
     <h2 class="section-h">Selected work</h2>
 
     <article class="proj">
-      <div class="proj-tag">Biomedical / CFD<br>2026</div>
+      <div class="proj-tag">Biomedical / FEA<br>2026</div>
       <div>
-        <h3 class="proj-title">Digital twin &mdash; cardiovascular stents</h3>
-        <p class="proj-desc">Full FSI pipeline for stent deployment. Patient-specific 3D artery scans, CFD models of stenosed arteries, smart-material stents, and clinical-metrics evaluation in virtual implantation scenarios.</p>
-        <p class="proj-outcome">Wall shear stress, pressure drop and flow recovery quantified across patient-specific anatomies. ANSYS Fluent &middot; SpaceClaim &middot; FSI.</p>
+        <h3 class="proj-title">StentForge &mdash; coronary stent digital twin</h3>
+        <p class="proj-desc">Nonlinear contact FEA across a 174-design stent corpus on Australia&apos;s national supercomputer, with Ansys Mechanical APDL driven entirely from Python, parametric geometry in, engineering quantities out, no GUI anywhere in the loop.</p>
+        <p class="proj-outcome">Most of the interesting work has been the parts nobody writes tutorials for, making a campaign survive being killed halfway, sizing jobs against a real cost model, and tracking down a solver failure that only appeared under batch scheduling. Ansys Mechanical APDL &middot; PyMAPDL &middot; Python &middot; NCI Gadi.</p>
       </div>
     </article>
+
+    <article class="proj">
+      <div class="proj-tag">CFD / Turbulence<br>Oct 2026</div>
+      <div>
+        <h3 class="proj-title">Turbulent flow over a backward-facing step</h3>
+        <p class="proj-meta">MIET2586 Computational Fluid Dynamics &middot; Individual</p>
+        <p class="proj-desc">The backward-facing step is a well established test case in computational fluid dynamics (CFD). A two-dimensional backward-facing step in a channel was modeled at a Reynolds number based on the step height of Re = 5100 using three different meshing schemes and a three-level refinement strategy. Four turbulence treatments and two fluids were used, and the results were compared with DNS (reattachment length 6.28h) and experimental data (6.0h).</p>
+        <p class="proj-outcome">Both k-&epsilon; models for the 2D BFS were found to reattach too early, the standard model by 33.5% and the realizable model by 23.0%. ANSYS Fluent &middot; mesh refinement study &middot; k-&epsilon;, k-&omega; SST &middot; validation against DNS and experiment.</p>
+        <div class="proj-figs"><figure class="wide"><img src="img/projects/bfs-velocity.webp" alt="Velocity magnitude, 0 to 1.8 m/s (realizable k-ε)" loading="lazy" /><figcaption>Velocity magnitude, 0 to 1.8 m/s (realizable k-ε)</figcaption></figure><figure class="wide"><img src="img/projects/bfs-pathlines.webp" alt="Pathlines in the recirculation bubble" loading="lazy" /><figcaption>Pathlines in the recirculation bubble</figcaption></figure><figure><img src="img/projects/bfs-mesh.webp" alt="Refined structured mesh near the step" loading="lazy" /><figcaption>Refined structured mesh near the step</figcaption></figure><figure><img src="img/projects/bfs-skin-friction.webp" alt="Floor skin friction: standard and realizable k-ε against experiment" loading="lazy" /><figcaption>Floor skin friction: standard and realizable k-ε against experiment</figcaption></figure></div>
+      </div>
+    </article>
+
+    <article class="proj">
+      <div class="proj-tag">Heat transfer / CFD<br>May 2026</div>
+      <div>
+        <h3 class="proj-title">Degrees of Danger: infants left in hot cars</h3>
+        <p class="proj-meta">Heat transfer coursework &middot; Group of 5 &middot; My part: the windows-closed CFD simulation</p>
+        <p class="proj-desc">This study models the transient thermal response of a typical car cabin (G-wagon: internal volume ~8 m³) under Melbourne summer conditions (35°C ambient, 15 January) to quantify the time to life-threatening infant core temperatures (identified as 40-42°C). A three-dimensional transient CFD simulation was used to record and compare cabin air temperature over time.</p>
+        <p class="proj-outcome">Cabin air temperature reaches approximately 50°C within 15 minutes and approaches a steady-state of ~54°C at 60 minutes. The 40°C heat stroke threshold is projected to be reached within approximately 75 minutes, and a 200 mm window opening provided no meaningful thermal protection. ANSYS Fluent &middot; DO radiation with solar loading &middot; transient.</p>
+        <div class="proj-figs"><figure><img src="img/projects/hotcar-contour-left.webp" alt="Static temperature contour, left side" loading="lazy" /><figcaption>Static temperature contour, left side</figcaption></figure><figure><img src="img/projects/hotcar-contour-right.webp" alt="Static temperature contour, right side" loading="lazy" /><figcaption>Static temperature contour, right side</figcaption></figure><figure><img src="img/projects/hotcar-mesh.webp" alt="Cabin mesh" loading="lazy" /><figcaption>Cabin mesh</figcaption></figure><figure><img src="img/projects/hotcar-max-temp.webp" alt="Maximum cabin temperature over time" loading="lazy" /><figcaption>Maximum cabin temperature over time</figcaption></figure></div>
+      </div>
+    </article>
+
+    <article class="proj">
+      <div class="proj-tag">FEA / Structural<br>Oct 2025</div>
+      <div>
+        <h3 class="proj-title">Suspension shaft rocker and lower wishbone</h3>
+        <p class="proj-meta">MIET1084 Finite Element Analysis &middot; Pair project</p>
+        <p class="proj-desc">Finite element analysis of a shaft rocker and lower suspension wishbone has been conducted using ANSYS Workbench for application in a vehicle suspension assembly. Structural analyses were performed on the baseline geometries, followed by iterative geometric refinements to achieve the required safety factors while minimizing overall mass.</p>
+        <p class="proj-outcome">Shaft rocker: a minimum fatigue safety factor of 1.74 at a design life of 1000 blocks. Lower wishbone: buckling safety factor of 7.73, maximum deformation of 0.31 mm and minimum yield safety factor of 4.05. Both designs met the 75 g and 300 g mass limits. ANSYS Workbench &middot; SpaceClaim &middot; fatigue &middot; eigenvalue buckling.</p>
+        <div class="proj-figs"><figure><img src="img/projects/fea-wishbone-deformation.webp" alt="Total deformation, modified wishbone" loading="lazy" /><figcaption>Total deformation, modified wishbone</figcaption></figure><figure><img src="img/projects/fea-rocker-deformation.webp" alt="Total deformation, modified shaft rocker" loading="lazy" /><figcaption>Total deformation, modified shaft rocker</figcaption></figure><figure><img src="img/projects/fea-wishbone-mesh.webp" alt="Wishbone mesh" loading="lazy" /><figcaption>Wishbone mesh</figcaption></figure></div>
+      </div>
+    </article>
+
+    <article class="proj">
+      <div class="proj-tag">UAV / Machine learning<br>Oct 2026</div>
+      <div>
+        <h3 class="proj-title">Hearing propeller damage on a quadrotor</h3>
+        <p class="proj-meta">MIET2580 Vehicle Noise and Vibration &middot; Individual</p>
+        <p class="proj-desc">A propeller failure can be dangerous for a quadrotor. Normally, propeller damage is discovered by ground inspection. We used 1956 five-second on-board audio clips from a published data set to classify the number of damaged propellers (0, 1, 2, 3&ndash;4), holding out five configurations.</p>
+        <p class="proj-outcome">The course-default 1-NN scores 99.2, 98.4 and 84.1%; a pre-registered mel-bank change raises the last to 87.6% (the final model). Detection could trigger inspections; counting is not yet reliable. MATLAB &middot; MFCC features &middot; 1-NN, SVM &middot; flight-grouped validation.</p>
+        <div class="proj-figs"><figure><img src="img/projects/uav-spectrum.webp" alt="Class-median Welch spectrum" loading="lazy" /><figcaption>Class-median Welch spectrum</figcaption></figure><figure><img src="img/projects/uav-tsne.webp" alt="t-SNE map of the features" loading="lazy" /><figcaption>t-SNE map of the features</figcaption></figure><figure><img src="img/projects/uav-confusion.webp" alt="1-NN confusion matrices" loading="lazy" /><figcaption>1-NN confusion matrices</figcaption></figure></div>
+      </div>
+    </article>
+
+    <article class="proj">
+      <div class="proj-tag">Thermodynamics / Energy<br>May 2026</div>
+      <div>
+        <h3 class="proj-title">Off-grid cogeneration for a wool mill</h3>
+        <p class="proj-meta">Energy and exergy analysis &middot; Group of 3 &middot; My part: energy balance and exergy balance</p>
+        <p class="proj-desc">This project evaluated the feasibility of a diesel cogeneration system for supplying both electricity and hot water to a wool mill operating without access to grid electricity or mains gas. The system uses a diesel generator to meet the mill&apos;s electrical demand, while recovering waste heat from the engine coolant and exhaust gas to heat process water.</p>
+        <p class="proj-outcome">An 18 kW generator was selected for a 17.78 kW peak demand. The exergy analysis showed that the diesel generator had the largest irreversibility in the system; the coolant heat exchanger achieved a maximum exergetic efficiency of 60.3%. Energy balance &middot; exergy analysis &middot; storage sizing.</p>
+        <div class="proj-figs"><figure><img src="img/projects/woolmill-schematic.webp" alt="Co-generation system schematic" loading="lazy" /><figcaption>Co-generation system schematic</figcaption></figure></div>
+      </div>
+    </article>
+
+    <article class="proj">
+      <div class="proj-tag">Control / System ID<br>Oct 2026</div>
+      <div>
+        <h3 class="proj-title">Frequency response of a cruise-control vehicle</h3>
+        <p class="proj-meta">MIET2006 Automatic Control &middot; Pair lab</p>
+        <p class="proj-desc">Frequency response and system identification of a virtual cruise-control vehicle.</p>
+        <p class="proj-outcome">First-order model identified from step and sinusoidal tests, checked with Bode and Nyquist diagrams. MATLAB &middot; Simulink.</p>
+        <div class="proj-figs"><figure class="wide"><img src="img/projects/cruise-simulink.webp" alt="Simulink model of the cruise-control system" loading="lazy" /><figcaption>Simulink model of the cruise-control system</figcaption></figure><figure><img src="img/projects/cruise-bode.webp" alt="Bode magnitude with straight-line approximation" loading="lazy" /><figcaption>Bode magnitude with straight-line approximation</figcaption></figure></div>
+      </div>
+    </article>
+
 
     <article class="proj">
       <div class="proj-tag">Rocketry / Systems<br>2025</div>
