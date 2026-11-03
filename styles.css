@@ -296,7 +296,7 @@ a.row:hover .arrow { color: var(--ink); transform: translateX(4px); }
   transition: color .2s, border-color .2s;
 }
 .contact-big:hover { color: var(--accent); border-color: var(--accent); }
-.contact-meta { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.5rem; margin-top: 3rem; border-top: 1px solid var(--rule); padding-top: 1.25rem; }
+.contact-meta { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1.5rem; margin-top: 3rem; border-top: 1px solid var(--rule); padding-top: 1.25rem; }
 .contact-meta dt { font-family: var(--mono); font-size: .75rem; text-transform: uppercase; letter-spacing: .02em; color: var(--secondary); }
 .contact-meta dd { font-weight: 500; margin-top: .35rem; }
 .contact-meta dd a { border-bottom: 1px solid var(--faint); }
