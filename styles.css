@@ -561,3 +561,7 @@ footer { margin-top: 2rem; background: var(--ink); color: #fff; padding: clamp(3
   .hl-quote { padding: 1.2rem 1.1rem; }
 }
 
+/* Brand icons on profile links (Font Awesome brands) */
+.fa-brands { margin-right: .4em; font-size: 1.05em; line-height: 1; vertical-align: -0.06em; }
+.contact-meta dd a .fa-brands, .footer-links .fa-brands { opacity: .9; }
+
