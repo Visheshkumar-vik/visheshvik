@@ -565,3 +565,11 @@ footer { margin-top: 2rem; background: var(--ink); color: #fff; padding: clamp(3
 .fa-brands { margin-right: .4em; font-size: 1.05em; line-height: 1; vertical-align: -0.06em; }
 .contact-meta dd a .fa-brands, .footer-links .fa-brands { opacity: .9; }
 
+/* Writing page: a light-hearted GIF beside the intro */
+.writing-hero { display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: clamp(2rem, 5vw, 4rem); align-items: end; }
+.hero-gif { margin: 0 0 2.5rem; background: var(--paper); border: 1px solid var(--rule); transform: rotate(1.5deg); }
+.hero-gif img { display: block; width: 100%; height: auto; }
+.hero-gif figcaption { font-family: var(--mono); font-size: .6875rem; color: var(--secondary); padding: .45rem .6rem; border-top: 1px solid var(--rule); }
+.hero-gif figcaption a { color: inherit; text-decoration: underline; text-underline-offset: 2px; }
+@media (max-width: 800px) { .writing-hero { grid-template-columns: 1fr; } .hero-gif { max-width: 300px; margin-top: -1rem; } }
+
