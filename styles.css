@@ -573,3 +573,14 @@ footer { margin-top: 2rem; background: var(--ink); color: #fff; padding: clamp(3
 .hero-gif figcaption a { color: inherit; text-decoration: underline; text-underline-offset: 2px; }
 @media (max-width: 800px) { .writing-hero { grid-template-columns: 1fr; } .hero-gif { max-width: 300px; margin-top: -1rem; } }
 
+/* Iradda hero: live pen sketch of a woman on the right */
+.iradda-hero { position: relative; }
+.sketch-woman { position: absolute; right: 0; top: 50%; transform: translateY(-50%); width: clamp(220px, 24vw, 380px); margin: 0; pointer-events: none; }
+.sketch-woman svg { display: block; width: 100%; height: auto; overflow: visible; }
+.sketch-woman .ink path { stroke: var(--ink); stroke-width: 2.5; }
+.sketch-woman .ink path.accent-stroke { stroke: var(--accent); }
+.sketch-woman .pen-tip { fill: var(--ink); transition: opacity .2s; }
+@media (max-width: 1000px) {
+  .sketch-woman { position: static; transform: none; width: 230px; margin: 2.5rem 0 0 auto; }
+}
+
