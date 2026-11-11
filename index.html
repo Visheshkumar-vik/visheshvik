@@ -27,7 +27,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/fontawesome.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/brands.min.css" />
   <link rel="stylesheet" href="styles.css?v=20261104h" />
-  <link rel="stylesheet" href="pipeline.css?v=20261112b" />
 </head>
 <body>
 
@@ -46,99 +45,40 @@
 
 <main>
 
-  <!-- ── Landing: one method, any geometry. Scroll-driven 3D ─────────── -->
-  <section class="pipe" id="pipeline" aria-label="Four of my projects, from CAD to simulation">
-    <div class="pipe-stage">
-      <canvas class="pipe-canvas" aria-hidden="true"></canvas>
-      <div class="pipe-frame wrap">
-        <div class="pipe-panels">
-
-          <article class="pipe-panel intro is-on">
-            <p class="hero-kicker">
-              <span class="live">Open to graduate, site &amp; FIFO roles</span>
-              <span>Melbourne, Australia</span>
-            </p>
-            <h1 class="hero-name">
-              <span class="line"><span>Vishesh</span></span>
-              <span class="line"><span style="--d:.08s">Kumar<span class="accent">.</span></span></span>
-            </h1>
-            <p class="hero-lede">Mechanical engineer. I take any geometry through CAD, FEA and CFD, and I automate the work in Python.</p>
-            <ul class="hero-links">
-              <li><a href="mailto:visheshkumar.vik@gmail.com" class="btn-primary">Get in touch</a></li>
-              <li><a href="work.html">Full CV</a></li>
-              <li><a href="https://www.linkedin.com/in/vikvisheshkumar" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin" aria-hidden="true"></i>LinkedIn</a></li>
-              <li><a href="https://github.com/Visheshkumar-vik" target="_blank" rel="noopener"><i class="fa-brands fa-github" aria-hidden="true"></i>GitHub</a></li>
-            </ul>
-            <p class="pipe-hint">Scroll to see four of my projects</p>
-          </article>
-
-          <article class="pipe-panel">
-            <p class="pipe-step">Biomedical</p>
-            <h2>A stent, from flat pattern to blood flow</h2>
-            <p>This is the real stent from my capstone, StentForge. My Python tool draws the flat pattern and rolls it into a tube. Ansys Mechanical crimps the stent and expands it in a narrowed artery. Ansys Fluent then runs pulsatile blood flow past the struts.</p>
-            <p class="more">Ansys SimAI learns from every run. LEAP Australia plans a blog post and a video on this SimAI work, and we are preparing a paper for publication. I am the lead author, in a team of three.</p>
-            <ul class="pipe-tools"><li>CadQuery</li><li>PyMAPDL</li><li>Ansys Fluent</li><li>Ansys SimAI</li><li>NCI Gadi</li></ul>
-            <a href="work.html" class="see-all">See the full project <span class="arrow">&rarr;</span></a>
-          </article>
-
-          <article class="pipe-panel">
-            <p class="pipe-step">Aerospace and UAVs</p>
-            <h2>A quadcopter, from kit to CAD model</h2>
-            <p>I built a quadcopter from a kit and made a full SolidWorks model of it, with an exploded view and a motion study. For the RMIT UAS Research Team, I wrote autonomous flight control in Python.</p>
-            <p class="more">On the RMIT HIVE Rocketry Team, I led the systems engineering of a deployable nosecone for an L2 rocket.</p>
-            <ul class="pipe-tools"><li>SolidWorks</li><li>Motion Study</li><li>Python</li></ul>
-          </article>
-
-          <article class="pipe-panel">
-            <p class="pipe-step">Thermal</p>
-            <h2>A heat exchanger, from CAD to temperature</h2>
-            <p>I built the shell-and-tube heat exchanger in SpaceClaim. I meshed it in ANSYS Meshing, with refined boundary layers. ANSYS Fluent then solved the flow and the heat transfer. I checked the outlet temperatures against analytical predictions.</p>
-            <ul class="pipe-tools"><li>SpaceClaim</li><li>ANSYS Meshing</li><li>ANSYS Fluent</li><li>CFD-Post</li></ul>
-          </article>
-
-          <article class="pipe-panel">
-            <p class="pipe-step">Process</p>
-            <h2>A mixing elbow, from CAD to mixture</h2>
-            <p>I built a pipe elbow with a swirler in SpaceClaim and meshed it in ANSYS Meshing. ANSYS Fluent solved the species transport of the two streams. The results show how the swirl improves the mixing.</p>
-            <p class="more">The same method applies to chemical dosing and to mineral processing circuits.</p>
-            <ul class="pipe-tools"><li>SpaceClaim</li><li>ANSYS Meshing</li><li>Species transport</li><li>CFD-Post</li></ul>
-          </article>
-
-          <article class="pipe-panel">
-            <p class="pipe-step">Any geometry</p>
-            <h2>The same method on each part</h2>
-            <p>I make the CAD, mesh it, and run FEA or CFD. Then I automate the steps in Python, so the next design costs less time.</p>
-            <p>I am looking for a graduate, site or FIFO role where I can do this work.</p>
-            <ul class="hero-links">
-              <li><a href="mailto:visheshkumar.vik@gmail.com" class="btn-primary">Get in touch</a></li>
-              <li><a href="work.html">Full CV</a></li>
-              <li><a href="#work">Projects</a></li>
-            </ul>
-          </article>
-
-        </div>
-
-        <ol class="pipe-rail" aria-hidden="true">
-          <li><span>Biomedical</span></li><li><span>Aerospace and UAVs</span></li><li><span>Thermal</span></li><li><span>Process</span></li>
-        </ol>
-
-        <div class="pipe-legend" aria-hidden="true">
-          <span class="title"></span>
-          <div class="bar"></div>
-          <div class="ends"><span class="lo"></span><span class="hi"></span></div>
-        </div>
-
-        <div class="pipe-block" aria-hidden="true">
-          <ol class="pipe-methods">
-            <li class="lbl">Method</li><li data-m="0">CAD</li><li data-m="1">Mesh</li><li data-m="2">FEA</li><li data-m="3">CFD</li>
-          </ol>
-          <dl class="pipe-hud">
-            <dt>Domain</dt><dd data-hud="domain">Biomedical</dd>
-            <dt>Model</dt><dd data-hud="geo">The real StentForge stent. The artery and plaque are scaled to fit.</dd>
-            <dt>Note</dt><dd>The stent is real StentForge geometry. The other models are simplified. The colours are illustrations, not result data.</dd>
-          </dl>
-        </div>
+  <!-- ── Hero ───────────────────────────────────────────────────────── -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="hero-kicker reveal">
+          <span class="live">Open to graduate, site &amp; FIFO roles</span>
+          <span>Melbourne, AU &middot; via Delhi</span>
+        </p>
+        <h1 class="hero-name">
+          <span class="line"><span>Vishesh</span></span>
+          <span class="line"><span style="--d:.08s">Kumar<span class="accent">.</span></span></span>
+        </h1>
+        <p class="hero-lede reveal" style="--d:.2s">
+          Mechanical engineer who builds simulation that runs itself &mdash;
+          <strong>CFD</strong>, <strong>FEA</strong> and <strong>automation</strong>, with hands-on lab and build experience.
+        </p>
+        <ul class="hero-links reveal" style="--d:.3s">
+          <li><a href="mailto:visheshkumar.vik@gmail.com" class="btn-primary">Get in touch <span class="arrow">&rarr;</span></a></li>
+          <li><a href="work.html">Full CV <span class="arrow">&rarr;</span></a></li>
+          <li><a href="https://www.linkedin.com/in/vikvisheshkumar" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin" aria-hidden="true"></i>LinkedIn <span class="arrow">&nearr;</span></a></li>
+          <li><a href="https://github.com/Visheshkumar-vik" target="_blank" rel="noopener"><i class="fa-brands fa-github" aria-hidden="true"></i>GitHub <span class="arrow">&nearr;</span></a></li>
+        </ul>
       </div>
+
+      <figure class="titleblock reveal" style="--d:.25s">
+        <figcaption class="tb-head"><span>DWG VK-2026</span><span>Rev. C</span></figcaption>
+        <div class="tb-photo"><img src="me.jpg" alt="Portrait of Vishesh Kumar" width="640" height="800" /></div>
+        <dl class="tb-rows">
+          <div><dt>Role</dt><dd>B.Eng. (Mech.)<small>RMIT, final year</small></dd></div>
+          <div><dt>Current</dt><dd>Lab manager<small>RMIT UAS Research</small></dd></div>
+          <div><dt>Capstone</dt><dd>Stent digital twin<small>LEAP &middot; ANSYS</small></dd></div>
+          <div><dt>Founder</dt><dd>Iradda<small>Social impact</small></dd></div>
+        </dl>
+      </figure>
     </div>
   </section>
 
@@ -156,17 +96,6 @@
           </div>
         </div>
 
-        <div>
-          <figure class="titleblock about-photo">
-          <figcaption class="tb-head"><span>DWG VK-2026</span><span>Rev. C</span></figcaption>
-          <div class="tb-photo"><img src="me.jpg" alt="Portrait of Vishesh Kumar" width="640" height="800" /></div>
-          <dl class="tb-rows">
-            <div><dt>Role</dt><dd>B.Eng. (Mech.)<small>RMIT, final year</small></dd></div>
-            <div><dt>Current</dt><dd>Lab manager<small>RMIT UAS Research</small></dd></div>
-            <div><dt>Capstone</dt><dd>Stent digital twin<small>LEAP &middot; ANSYS</small></dd></div>
-            <div><dt>Founder</dt><dd>Iradda<small>Social impact</small></dd></div>
-          </dl>
-        </figure>
         <dl class="facts reveal" style="--d:.1s">
           <div><dt>Education</dt><dd>RMIT University<small>B.Eng. Mechanical/Aerospace &middot; Distinction &middot; 2023&ndash;2026</small></dd></div>
           <div><dt>Based in</dt><dd>Melbourne, AU<small>via Delhi, IN</small></dd></div>
@@ -177,7 +106,6 @@
             <span>SolidWorks</span><span>ANSYS Fluent</span><span>Python</span><span>MATLAB</span><span>ANSYS Mechanical</span><span>OpenRocket</span><span>XFLR5</span><span>FEA</span><span>CFD</span><span>Arduino</span>
           </dd></div>
         </dl>
-        </div>
       </div>
     </div>
   </section>
@@ -339,7 +267,5 @@ where the air smells like my grandmother.</div>
 </footer>
 
 <script src="site.js?v=20261104b"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
-<script src="pipeline.js?v=20261112b" defer></script>
 </body>
 </html>
